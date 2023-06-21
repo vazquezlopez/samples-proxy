@@ -12,16 +12,6 @@
     </PostFlow>
     <Flows/>
     <HTTPTargetConnection>
-        <LoadBalancer>
-            <MaxFailures>0</MaxFailures>
-            <RetryEnabled>true</RetryEnabled>
-            <Server name="ApigeeMockTargetURL">
-                <IsEnabled>true</IsEnabled>
-                <IsFallback>false</IsFallback>
-                <Weight>1</Weight>
-            </Server>
-            <TargetDisableSecs>300</TargetDisableSecs>
-        </LoadBalancer>
-        <Properties/>
+        <URL>https://mocktarget.apigee.net</URL>
     </HTTPTargetConnection>
 </TargetEndpoint>
